@@ -1,0 +1,231 @@
+:root {
+  --background-gradient: linear-gradient(178deg, #ffff33 10%, #3333ff);
+  --gray: #34495e;
+  --darkgray: #2c3e50;
+}
+
+
+
+
+.newArea {
+  font-family: Verdana, Tahoma, sans-serif;
+  background-color: #EEF0F7;
+  place-items: center;
+  min-height: 60vh;
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  line-height: 1.5;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.185);
+ 
+} 
+
+.newSolidParams {
+  font-family: Verdana, Tahoma, sans-serif;
+  background-color: #EEF0F7;
+  place-items: center;
+  width: 100%;
+  height: auto;
+  position: relative;
+  line-height: 1.5; 
+}
+
+.newArea img {
+  width: 500px;
+  height: 850px;
+  object-fit: cover;
+}
+
+
+
+.title {
+  font-family:'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif ;
+  font-size: 3.8rem;
+  font-weight: 700;
+  color: #1A2250;
+  
+  
+}
+
+.holder {
+  font-size: 18px;
+  font-weight: 500;
+  color: #3B4169;
+  margin: 10px 0;
+}
+
+.label {
+  font-size: 15px;
+  font-weight: 350;
+  color: #3B4169;
+  margin: 10px 10px;
+}
+
+.nameNewArea,
+.buttonSub,
+.buttonSkip{
+  width: 100%;
+  border: none;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.nameNewArea {
+  border: 5px solid #DADDEC;
+  font-size: 1.5rem;
+  color: #656880;
+} 
+
+.buttonSub {
+  background-image: linear-gradient(to right, #89CAFF, #6589FF);
+  display: block;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 5px 20px #89caff94;
+  transition: box-shadow .3s ease-in-out;
+}
+
+.buttonSub:hover {
+  box-shadow: none;
+} 
+
+.buttonSkip {
+  background-image: linear-gradient(to right, #bbbbbb, #939393);
+  display: block;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 5px 20px #89caff94;
+  transition: box-shadow .3s ease-in-out;
+}
+
+.select {
+    position: relative;
+    display: flex;
+    width: 20em;
+    height: 3em;
+    border-radius: .25em;
+    overflow: hidden;
+  }
+  .select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1em;
+    background-color: #34495e;
+    transition: .25s all ease;
+    pointer-events: none;
+  }
+  .select:hover::after {
+    color: #f39c12;
+  }
+.selection {
+    /* Reset Select */
+    appearance: none;
+    outline: 10px red;
+    border: 0;
+    box-shadow: none;
+    /* Personalize */
+    flex: 1;
+    padding: 0 1em;
+    color: #fff;
+    background-color: var(--darkgray);
+    background-image: none;
+    cursor: pointer;
+  }
+
+
+/* drop-box */
+
+.drop_box {
+  margin: 10px 0;
+  padding: 30px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 3px dotted #a3a3a3;
+  border-radius: 5px;
+}
+  
+.drop_box h4 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #2e2e2e;
+}
+
+.drop_box p {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: 12px;
+  color: #a3a3a3;
+}
+
+.btn {
+  text-decoration: none;
+  background-color: #003899;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  transition: 0.3s;
+  margin-bottom: 15px;
+}
+
+.btn:hover{
+  text-decoration: none;
+  background-color: #ffffff;
+  color: #005af0;
+  padding: 10px 20px;
+  border: none;
+  outline: 1px solid #010101;
+}
+
+
+.form input {
+    margin: 10px 0;
+    width: 100%;
+    background-color: #e2e2e2;
+    border: none;
+    outline: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+}
+
+@keyframes fadeDown {
+  from{
+      transform: translateY(-50%);
+      opacity: 0;
+  }
+  to{
+      transform: translateY(0%);
+      opacity: 1;
+  }
+}
+
+
+.newSolidParams{
+  display: none;
+  animation: fadeDown ease-in 1s;
+}
+  
+
+/* PICK CALENDAR */
+.calendar {
+  margin-bottom: 10px;
+  
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.calendar .date {
+  margin-left: 10px;
+  font-size: 1.5rem;
+  font-weight: 500;
+}

@@ -1,0 +1,116 @@
+.header__navbar-user{
+    display: flex;
+    justify-content: center;
+    width: 130px;
+}
+
+.header__navbar-user-img{
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+.header__navbar-user-name{
+    margin-left: 8px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    display: flex;
+}
+
+.header__navbar-user-menu{
+    position: absolute;
+    z-index: 3;
+    padding: 8px 0;
+    top: 75%;
+    right: 0;
+    background-color: var(--white-color);
+    border-radius: 2px;
+    list-style: none;
+    width: 160px;
+    box-shadow: 0 1px 3px #878787;
+    display: none;
+    animation: headerNotifyGrowth ease-in 0.2s;
+    will-change: opacity, transform;
+    transform-origin: 90% top;
+    
+}
+
+/* Dropdown */
+.dropbtn {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    padding: 8px 10px;
+    display: block;
+  }
+
+  .dropbtn:hover{background-color: #ececec;}  
+  
+  
+  .dropdown-content {
+    display: none;
+    animation: Fade-Down ease-in 0.2s;
+    margin-right: 8px;
+  }
+  
+  .show {display: flex;flex-direction: column;align-items: end}
+
+.header__navbar-user-menu::before{
+    content: "";
+    border-width: 20px 27px;
+    border-style: solid;
+    border-color: transparent transparent var(--white-color) transparent;
+    right: 4px;
+    top: -33px;
+    position: absolute;
+    z-index: 1;
+}
+
+.header__navbar-user:hover .header__navbar-user-menu{
+    display: block;
+}
+
+.header__navbar-user-item a{
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    padding: 8px 10px;
+    display: block;
+}
+
+.header__navbar-user-item a:first-child{
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+}
+
+.header__navbar-user-item a:last-child{
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+
+.header__navbar-user-item a:hover{
+    background-color: #ececec;
+}
+
+.header__navbar-admin-menu{   
+    background-color: var(--white-color);
+    list-style: none;
+    width: 160px;
+    display: none;
+    animation: Fade-Down ease-in 0.2s;
+    justify-content: flex-end;
+}
+
+.header__navbar-admin-item a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    padding: 4px 5px;
+    display: block;
+}
+
+.header__navbar-admin-item a:hover{
+    color: var(--hover-color);
+}
